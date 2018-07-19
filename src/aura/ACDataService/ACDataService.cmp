@@ -1,5 +1,5 @@
 <aura:component Controller="ACController">
 	<aura:method name="getContacts" action="{!c.getContactsAction}">
-        <aura:attribute name="payload" type="Object" description="" />
-    </aura:method>
+		<aura:attribute name="payload" type="Object" description="" />
+	</aura:method>
 </aura:component>
