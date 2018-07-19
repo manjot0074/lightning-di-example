@@ -1,4 +1,4 @@
 <aura:component controller="injectionController">
 	<aura:method name="getComponentName" action="{!c.getInjectionComponent}">
-    </aura:method>
+	</aura:method>
 </aura:component>
