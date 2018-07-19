@@ -7,22 +7,22 @@
     <aura:attribute name="cont" type="Contact"/>
     <aura:attribute name="injectedComponent" type="Aura.Component[]"/>
     
-    <div class="slds-grid ">
-        <div class="slds-col slds-grid_vertical slds-size_1-of-4">
-    		<aura:iteration items="{!v.contactList}" var="cont" indexVar="ind">
-                <div class="slds-col" id="{!ind}" onclick="{!c.selectContact}">
-                    <span>{!cont.Name}</span>
-                </div>
-         	</aura:iteration>
-  		</div>
-        <div class="slds-col slds-size_2-of-4">
-            <span>{!v.cont.Name}</span>
-            <span>{!v.cont.MobilePhone}</span>
-     	</div>
-        <div class="slds-col slds-size_1-of-4">
-            {!v.injectedComponent}
-     	</div>
-     </div> 
-    <c:injectionService aura:id="injectionService"/>
-    <c:ACDataService aura:id="ACDataService"/>
+	<div class="slds-grid ">
+		<div class="slds-col slds-grid_vertical slds-size_1-of-4">
+			<aura:iteration items="{!v.contactList}" var="cont" indexVar="ind">
+				<div class="slds-col" id="{!ind}" onclick="{!c.selectContact}">
+					<span>{!cont.Name}</span>
+				</div>
+			</aura:iteration>
+		</div>
+		<div class="slds-col slds-size_2-of-4">
+			<span>{!v.cont.Name}</span>
+			<span>{!v.cont.MobilePhone}</span>
+		</div>
+		<div class="slds-col slds-size_1-of-4">
+			{!v.injectedComponent}
+		</div>
+		</div> 
+	<c:injectionService aura:id="injectionService"/>
+	<c:ACDataService aura:id="ACDataService"/>
 </aura:component>
